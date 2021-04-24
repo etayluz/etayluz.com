@@ -1,0 +1,18 @@
+    /* Chrome, Safari */
+    ::-webkit-scrollbar {
+    width: 12px;
+    height: 10px;
+    }
+    ::-webkit-scrollbar-track-piece  {
+    /*background-color: red;*/
+    }
+    ::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    border-radius:10px;
+    background-color: #D8D8D8;
+    padding: 5px;
+    }
+
+    textarea {
+    resize: none;
+	}
