@@ -19,31 +19,35 @@
 <body>
   <title>Etay Luz</title>
   <div id="bar-frame">
-    <button id="home-menu-button" onclick="smoothScroll('barFrame')">Home</button>
-    <button id="listen-menu-button" onclick="smoothScroll('introFrame')">Listen</button>
+    <button id="home-menu-button" onclick="smoothScroll('bar-frame')">Home</button>
+    <button id="listen-menu-button" onclick="smoothScroll('video-frame')">Listen</button>
     <a target="_blank" href="https://www.linkedin.com/in/etay-luz"><img id="linkedin-icon" src="./images/linkedin.png"/></a>
     <a target="_blank" href="https://www.facebook.com/etay.luz/"><img id="facebook-icon" src="./images/facebook.png"/></a>
     <a target="_blank" href="https://www.instagram.com/king.slayer1/"><img id="instagram-icon" src="./images/instagram.png"/></a>
   </div>
-
   <div id="home-frame">
     <img id="home-frame-wave" src="./images/wave.gif"/>
-    <!-- <div id="home-frame-title">ETAY LUZ
+    <div id="home-frame-title">ETAY LUZ
       <div id="home-frame-text">Engineer. Entrepreneur. Entertainer.</div>
     </div>
-    <button id='listen-button' onclick="smoothScroll('introFrame')">Have a listen</button> -->
+    <button id='listen-button' onclick="smoothScroll('video-frame')">Have a listen</button>
   </div>
-  <div id="intro-frame">
-    <!-- <img id="introFrameImage" src="./images/Etay3_trans.png"/>
+  <video id="video-frame" controls>
+    <source src="tears-in-heaven.m4v" type="video/m4v">
+    <!-- <source src="movie.ogg" type="video/ogg"> -->
+    <!-- Your browser does not support the video tag. -->
+  </div>
+  <!-- <div id="intro-frame">
+    <img id="introFrameImage" src="./images/Etay3_trans.png"/>
     <div id="introTitle">WHAT IS THIS?</div>
-    <div id="introText">Welcome to my personal website! I just launched it for fun. I'm still trying to figure out what I want to do with it. Feel free to look around!</div></th>  -->
+    <div id="introText">Welcome to my personal website! I just launched it for fun. I'm still trying to figure out what I want to do with it. Feel free to look around!</div></th> 
   </div>
   <div id="bio-frame">
-    <!-- <div id="bioTitle">BIO</div>
-    <div id="bioText">Etay was born in 1984 in Tel Aviv, Israel but at age 9 his family moved to Chicago. In 2005 Etay graduated from the University of Illinois in Urbana-Champaign with a degree in Electrical Engineering. Since then he has worked for various technology corporations and startups in Tel Aviv, San Francisco, New York, Miami, and Chicago.</div> -->
+    <div id="bioTitle">BIO</div>
+    <div id="bioText">Etay was born in 1984 in Tel Aviv, Israel but at age 9 his family moved to Chicago. In 2005 Etay graduated from the University of Illinois in Urbana-Champaign with a degree in Electrical Engineering. Since then he has worked for various technology corporations and startups in Tel Aviv, San Francisco, New York, Miami, and Chicago.</div>
   </div>
   <div id="bio-frame2">
-    <!-- <img id="bioFrame2Image" src="./images/baby.png"/>
-    <div id="bioText">Today Etay works for IBM as a software engineer implementing IBM\'s artifical intelligence and machine learning solutions for clients. Prior to joining IBM, Etay has worked for Motorola, Intel, Qualcomm, and a handful of startups.</div> -->
-  </div>
+    <img id="bioFrame2Image" src="./images/baby.png"/>
+    <div id="bioText">Today Etay works for IBM as a software engineer implementing IBM\'s artifical intelligence and machine learning solutions for clients. Prior to joining IBM, Etay has worked for Motorola, Intel, Qualcomm, and a handful of startups.</div>
+  </div> -->
 </body>

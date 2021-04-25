@@ -13,7 +13,6 @@ $(document).ready(function(e) {
 
 
 window.smoothScroll = function(toFrame) {
-  console.log(toFrame)
 	target = document.getElementById(toFrame)
 	var scrollContainer = target;
 	do { // find scroll container
@@ -29,9 +28,10 @@ window.smoothScroll = function(toFrame) {
 	} while (target = target.offsetParent);
 
 	scroll = function(c, a, b, i) {
-			i++; if (i > 30) return;
+			i++;
+      if (i > 30) return;
 			c.scrollTop = a + (b - a) / 30 * i;
-			setTimeout(function(){ scroll(c, a, b, i); }, 20);
+			setTimeout(function(){ scroll(c, a, b, i); }, 15);
 	}
 	// start scrolling
 	scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
