@@ -1,20 +1,11 @@
 $(document).ready(function(e) {
 	barHeight = 60
 	fontSize = 20
-	// $("body").append()
-
 	
-
-	
-	$("body").append('<div id="homeFrame" style="position:absolute;top:'+ barHeight + 'px;left:0px;right:-2px;bottom:0px;background-color:green"></div>')
-	$("#homeFrame").append('<div id="homeFrame" style="position:absolute;top:0px;right:0px;width:100%;bottom:0px;background-color:#d7d8d7;"></div>')
-	$("#homeFrame").append('<img id="Wave" src="./images/wave2.gif" style="position:absolute;left:0px;top:0px;bottom:0px;right:0px;display:block;margin-left:auto;margin-right:auto;width:100%;height:100%;object-fit:cover;"/>')
 	// $("#homeFrame").append('<div id="homeFrame" style="position:absolute;top:0px;left:50px;width:0%;bottom:0px;background-color:#d7d8d7;"></div>')
 
 	textColor = '#000080'
-	$("#homeFrame").append('<div id="name" style="position:absolute;top:60%;left:2.5%;width:100%;color:' + textColor + ';font-size:72px;font-family:Comic Sans MS;text-align:center;font-weight: bold;">ETAY LUZ</div>')
-	$("#name").append('<div id="slogan" style="position:absolute;top:115%;left:0%;width:100%;color:' + textColor + ';font-size:32px;font-family:Comic Sans MS;text-align:center;">Engineer. Entrepreneur. Entertainer.</div>')
-	$("#homeFrame").append('<div id="button" style="position:absolute;text-align:center;top:80%;left:2.5%;width:100%;"><br><button type="button" style="top:0%;height:100px;width:300px;color:white;background-color:#393F44;font-size:30px;border-radius:40px;" onclick="smoothScroll(document.getElementById(\'introFrame\'))">Have a listen</button></div>')
+	$("#homeFrame").append('')
 
 	// $("#homeFrame").append('<img id="Etay1" src="./images/9.png" style="position:absolute;left:0px;top:0px;bottom:0px;right:0px;display:block;margin-left:auto;margin-right:auto;width:100%;height:100%;object-fit:cover;"/>')	
 
@@ -51,16 +42,17 @@ $(document).ready(function(e) {
 
 
 window.smoothScroll = function(toFrame) {
+  console.log(toFrame)
 	target = document.getElementById(toFrame)
 	var scrollContainer = target;
-	do { //find scroll container
+	do { // find scroll container
 			scrollContainer = scrollContainer.parentNode;
 			if (!scrollContainer) return;
 			scrollContainer.scrollTop += 1;
 	} while (scrollContainer.scrollTop == 0);
 
 	var targetY = 0;
-	do { //find the top of target relatively to the container
+	do { // find the top of target relatively to the container
 			if (target == scrollContainer) break;
 			targetY += target.offsetTop;
 	} while (target = target.offsetParent);
