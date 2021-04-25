@@ -1,18 +1,10 @@
 $(document).ready(function(e) {
 	barHeight = 60
 	fontSize = 20
-	$("body").append('<div id="bar" class="bar" class="bar"></div>')
-	$("#bar").append('<button type="button" id="homeMenuButton" \
-										onclick="smoothScroll(document.getElementById(\'introFrame\'))">Home</button>')
-	$("#home").append('<div id="intro" style="font-size:' + fontSize + 'px;position:absolute;top:0%;left:100px;color:white"><button type="button" onclick="smoothScroll(document.getElementById(\'introFrame\'))" style="font-size:' + fontSize + 'px;background-color:Transparent;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none;color:white;">Intro</button></div>')
-	$("#intro").append('<div id="bio" style="position:absolute;top:0%;left:90px;color:white"><button type="button" onclick="smoothScroll(document.getElementById(\'bioFrame\'))" style="font-size:' + fontSize + 'px;background-color:Transparent;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none;color:white;">Bio</button></div>')
-	// $("#intro").append('<div id="bio" style="position:absolute;top:0%;left:80px;color:white">Bio</div>')
-	// $("#bio").append('<div id="hobbies" style="position:absolute;top:0%;left:80px;color:white">Hobbies</div>')
-	$("#bio").append('<div id="hobbies" style="position:absolute;top:0%;left:80px;color:white"><button type="button" onclick="smoothScroll(document.getElementById(\'hobbiesFrame\'))" style="font-size:' + fontSize + 'px;background-color:Transparent;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none;color:white;">Hobbies</button></div>')
+	// $("body").append()
+
 	
-	$("#hobbies").append('<a target="_blank" href="https://www.linkedin.com/in/etay-luz"><img id="linkedin" src="./images/linkedin.png" style="position:absolute;left:200px;top:-10px;width:40px;height:40px"/></a>')
-	$("#hobbies").append('<a target="_blank" href="https://www.facebook.com/etay.luz/"><img id="facebook" src="./images/facebook.png" style="position:absolute;left:260px;top:-10px;width:40px;height:40px"/></a>')
-	$("#hobbies").append('<a target="_blank" href="https://www.instagram.com/king.slayer1/"><img id="instagram" src="./images/instagram.png" style="position:absolute;left:320px;top:-10px;width:40px;height:40px"/></a>')
+
 	
 	$("body").append('<div id="homeFrame" style="position:absolute;top:'+ barHeight + 'px;left:0px;right:-2px;bottom:0px;background-color:green"></div>')
 	$("#homeFrame").append('<div id="homeFrame" style="position:absolute;top:0px;right:0px;width:100%;bottom:0px;background-color:#d7d8d7;"></div>')
@@ -57,6 +49,27 @@ $(document).ready(function(e) {
 	// $("#hobbiesTitle").append('<div id="slogan" style="position:absolute;top:120%;left:0%;width:100%;color:#393F44;font-size:34px;font-family:Georgia,sans-serif;line-height:1.3;color:#e80fe1;line-height:1.5;">Welcome to my personal website! I just launched it for fun. I\'m still trying to figure out what I want to do with it. Feel free to look around!</div>')
 });
 
-function scroll(p1, p2) {
-  smoothScroll(document.getElementById('introFrame'))
+
+window.smoothScroll = function(toFrame) {
+	target = document.getElementById(toFrame)
+	var scrollContainer = target;
+	do { //find scroll container
+			scrollContainer = scrollContainer.parentNode;
+			if (!scrollContainer) return;
+			scrollContainer.scrollTop += 1;
+	} while (scrollContainer.scrollTop == 0);
+
+	var targetY = 0;
+	do { //find the top of target relatively to the container
+			if (target == scrollContainer) break;
+			targetY += target.offsetTop;
+	} while (target = target.offsetParent);
+
+	scroll = function(c, a, b, i) {
+			i++; if (i > 30) return;
+			c.scrollTop = a + (b - a) / 30 * i;
+			setTimeout(function(){ scroll(c, a, b, i); }, 20);
+	}
+	// start scrolling
+	scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }

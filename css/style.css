@@ -1,4 +1,4 @@
-.bar { 
+#barFrame { 
     font-size: 20px;
     position: fixed;
     top: 0px;
@@ -12,7 +12,7 @@
 #homeMenuButton {
     position: absolute;
     top: 30%;
-    left: 13.1%;
+    left: 13%;
     font-size: 20px;
     background-color: Transparent;
     background-repeat: no-repeat;
@@ -21,4 +21,42 @@
     overflow: hidden;
     outline: none;
     color: white;
+}
+
+#aboutMenuButton {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 20px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: white;
+}
+
+#linkedin {
+    position: absolute;
+    left: 30%;
+    top: 10px;
+    width: 40px;
+    height: 40px; 
+}
+
+#facebook {
+  position: absolute;
+  left: 35%;
+  top: 10px;
+  width: 40px;
+  height: 40px; 
+}
+
+#instagram {
+  position: absolute;
+  left: 40%;
+  top: 10px;
+  width: 40px;
+  height: 40px; 
 }
