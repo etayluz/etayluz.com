@@ -5,13 +5,15 @@
     left: 0px;
     right: 0px;
     height: 60px;
+    width: 100%;
     background-color: #383f43;
     z-index: 100;
 }
 
 #homeFrame {
   position: absolute;
-  top: 60px;
+  width: 100%;
+  top: 0px;
   left: 0px;
   right: -2px;
   bottom: 0px;
@@ -20,9 +22,10 @@
 
 #introFrame {
   position: absolute;
-  top:100%;
+  width: 100%;
+  top: 100%;
   left: 0px;
-  right: 0px;
+  right: -2px;
   height: 80%;
   bottom: 0px;
   background-color: #fae8bd
@@ -33,15 +36,26 @@
   position: absolute;
   top: 50%;
   height: 100%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -ms-transform: translateY(-50%); /* Centers image vertifally */
+  transform: translateY(-50%); /* Centers image vertifally */
 }
 
+@media only screen and (max-width: 1000px) {
+  #introFrameImage {
+    margin: 0;
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    height: 70%;
+    -ms-transform: translateY(-50%); /* Centers image vertifally */
+    transform: translateY(-50%); /* Centers image vertifally */
+  }
+}
 
 #introTitle {
   position: absolute;
-  left: 50%;
-  top: 10%;
+  left: 55%;
+  top: 30%;
   width: 80%;
   color: #393F44;
   font-size: 50px;
@@ -52,8 +66,8 @@
 
 #introText {
   position: absolute; 
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 55%;
   width: 40%;
   color: #393F44;
   font-size: 34px;
@@ -149,7 +163,7 @@
     top: 0px;
     bottom: 0px;
     right: 0px;
-    width: 135%;
+    width: 100%;
     height: 100%;
     margin-left: auto; /* Centers image horizontally */
     margin-right: auto; /* Centers image horizontally */
