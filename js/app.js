@@ -1,12 +1,9 @@
 $(document).ready(function(e) {
-	var width = 1440
-	var height = width * 652/970
-		
 	barHeight = 60
 	fontSize = 20
-	$("body").append('<div id="bar" style="font-size:' + fontSize + 'px;position:absolute;top:0px;left:-10px;right:-10px;height:' + barHeight + 'px;background-color:#383f43;border-style: solid;border-right-width:0px;border-left-width:0px;border-top-width:1px;border-bottom-width:0px;border-radius:10px;border-color:clear"></div>')
-	// $("#bar").append('<div id="home" style="font-size:' + fontSize + 'px;position:absolute;top:30%;left:13.1%;color:white">Home</div>')
-	$("#bar").append('<div id="home" style="font-size:' + fontSize + 'px;position:absolute;top:30%;left:13.1%;color:white"><button type="button" onclick="smoothScroll(document.getElementById(\'introFrame\'))" style="font-size:' + fontSize + 'px;background-color:Transparent;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none;color:white;">Home</button></div>')
+	$("body").append('<div id="bar" class="bar" class="bar"></div>')
+	$("#bar").append('<button type="button" id="homeMenuButton" \
+										onclick="smoothScroll(document.getElementById(\'introFrame\'))">Home</button>')
 	$("#home").append('<div id="intro" style="font-size:' + fontSize + 'px;position:absolute;top:0%;left:100px;color:white"><button type="button" onclick="smoothScroll(document.getElementById(\'introFrame\'))" style="font-size:' + fontSize + 'px;background-color:Transparent;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none;color:white;">Intro</button></div>')
 	$("#intro").append('<div id="bio" style="position:absolute;top:0%;left:90px;color:white"><button type="button" onclick="smoothScroll(document.getElementById(\'bioFrame\'))" style="font-size:' + fontSize + 'px;background-color:Transparent;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none;color:white;">Bio</button></div>')
 	// $("#intro").append('<div id="bio" style="position:absolute;top:0%;left:80px;color:white">Bio</div>')
@@ -59,3 +56,7 @@ $(document).ready(function(e) {
 	
 	// $("#hobbiesTitle").append('<div id="slogan" style="position:absolute;top:120%;left:0%;width:100%;color:#393F44;font-size:34px;font-family:Georgia,sans-serif;line-height:1.3;color:#e80fe1;line-height:1.5;">Welcome to my personal website! I just launched it for fun. I\'m still trying to figure out what I want to do with it. Feel free to look around!</div>')
 });
+
+function scroll(p1, p2) {
+  smoothScroll(document.getElementById('introFrame'))
+}

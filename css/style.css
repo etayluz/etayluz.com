@@ -1,18 +1,24 @@
-    /* Chrome, Safari */
-    ::-webkit-scrollbar {
-    width: 12px;
-    height: 10px;
-    }
-    ::-webkit-scrollbar-track-piece  {
-    /*background-color: red;*/
-    }
-    ::-webkit-scrollbar-thumb:vertical {
-    height: 30px;
-    border-radius:10px;
-    background-color: #D8D8D8;
-    padding: 5px;
-    }
+.bar { 
+    font-size: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    background-color: #383f43;
+    z-index: 100;
+}
 
-    textarea {
-    resize: none;
-	}
+#homeMenuButton {
+    position: absolute;
+    top: 30%;
+    left: 13.1%;
+    font-size: 20px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: white;
+}
