@@ -20,6 +20,16 @@
   background-color: green;
 }
 
+#bioFrame {
+  position: absolute;
+  top: 180%;
+  left: 0px;
+  right: 0px;
+  height: 70%;
+  bottom: 0px;
+  background-color: #d6d8d6;
+}
+
 #introFrame {
   position: absolute;
   width: 100%;
@@ -164,7 +174,6 @@
     top: 0px;
     bottom: 0px;
     right: 0px;
-    width: 100%;
     height: 100%;
     margin-left: auto; /* Centers image horizontally */
     margin-right: auto; /* Centers image horizontally */

@@ -9,7 +9,6 @@ $(document).ready(function(e) {
 	$("#introhomeFrame").append('')
 	$("#introTitle").append('')
 
-	$("#introFrame").append('<div id="bioFrame" style="position:absolute;top:100%;left:0px;right:0px;height:70%;bottom:0px;background-color:#d6d8d6"></div>')
 	$("#bioFrame").append('<div id="bioTitle" style="position:absolute;top:20%;left:20%;width:60%;color:#393F44;font-size:45px;font-family:Georgia,sans-serif;line-height:1.3;text-align:center;background-color:Transparent;">BIO</div>')
 	$("#bioTitle").append('<div id="bioText" style="position:absolute;top:120%;left:7.5%;width:85%;color:#393F44;font-size:31px;font-family:Georgia,sans-serif;line-height:1.4;text-align:center;background-color:Transparent">Etay was born in 1984 in Tel Aviv, Israel but at age 9 his family moved to Chicago. In 2005 Etay graduated from the University of Illinois in Urbana-Champaign with a degree in Electrical Engineering. Since then he has worked for various technology corporations and startups in Tel Aviv, San Francisco, New York, Miami, and Chicago.</div>')
 
