@@ -135,12 +135,28 @@
   top: 0px;
   bottom: 0px;
   right: 0px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  /* display: block; */
+  margin-left: auto; /* Centers image horizontally */
+  margin-right: auto; /* Centers image horizontally */
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media only screen and (max-width: 1000px) {
+  #wave {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 135%;
+    height: 100%;
+    /* display: block; */
+    margin-left: auto; /* Centers image horizontally */
+    margin-right: auto; /* Centers image horizontally */
+    object-fit: cover; /* Centers image horizontally */ 
+  }
 }
 
 #name {
@@ -151,7 +167,7 @@
   font-size: 72px;
   font-family: 'Comic Sans MS';
   text-align: center;
-  font-weight: bold"
+  font-weight: 'bold';
 }
 
 #slogan {
