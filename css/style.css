@@ -10,12 +10,57 @@
 }
 
 #homeFrame {
-  position:absolute;
-  top:60px;
-  left:0px;
-  right:-2px;
-  bottom:0px;
-  background-color:green;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  right: -2px;
+  bottom: 0px;
+  background-color: green;
+}
+
+#introFrame {
+  position: absolute;
+  top:100%;
+  left: 0px;
+  right: 0px;
+  height: 80%;
+  bottom: 0px;
+  background-color: #fae8bd
+}
+
+#introFrameImage {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  height: 100%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+#introTitle {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  width: 80%;
+  color: #393F44;
+  font-size: 50px;
+  font-family: 'Georgia,sans-serif';
+  line-height: 1.3;
+  color: #e80fe1
+}
+
+#introText {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  color: #393F44;
+  font-size: 34px;
+  font-family: Georgia,sans-serif;
+  line-height: 1.3;
+  color: #e80fe1;
+  line-height: 1.5;
 }
 
 #homeMenuButton {

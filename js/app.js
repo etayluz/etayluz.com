@@ -5,16 +5,9 @@ $(document).ready(function(e) {
 	// $("#homeFrame").append('<div id="homeFrame" style="position:absolute;top:0px;left:50px;width:0%;bottom:0px;background-color:#d7d8d7;"></div>')
 
 	textColor = '#000080'
-	$("#homeFrame").append('')
 
-	// $("#homeFrame").append('<img id="Etay1" src="./images/9.png" style="position:absolute;left:0px;top:0px;bottom:0px;right:0px;display:block;margin-left:auto;margin-right:auto;width:100%;height:100%;object-fit:cover;"/>')	
-
-	$("#homeFrame").append('<div id="introFrame" style="position:absolute;top:100%;left:0px;right:0px;height:80%;bottom:0px;background-color:#fae8bd"></div>')
-	$("#introFrame").append('<div id="introhomeFrame" style="position:absolute;top:0px;left:0px;width:50%;bottom:0px"></div>')
-	$("#introFrame").append('<div id="introhomeFrame" style="position:absolute;top:0px;right:0px;width:50%;bottom:0px;background-color:clear;"></div>')
-	$("#introhomeFrame").append('<img id="Etay2" src="./images/Etay3_trans.png" style="position:absolute;left:0px;top:0px;bottom:0px;right:0px;display:block;margin-left:auto;margin-right:auto;width:100%;height:100%;object-fit:contain;"/>')
-	$("#introhomeFrame").append('<div id="introTitle"                           style="position:absolute;left:100%;top:30%;width:80%;color:#393F44;font-size:50px;font-family:Georgia,sans-serif;line-height:1.3;color:#e80fe1">WHAT IS THIS?</div>')
-	$("#introTitle").append('<div id="slogan" style="position:absolute;top:120%;left:0%;width:100%;color:#393F44;font-size:34px;font-family:Georgia,sans-serif;line-height:1.3;color:#e80fe1;line-height:1.5;">Welcome to my personal website! I just launched it for fun. I\'m still trying to figure out what I want to do with it. Feel free to look around!</div>')
+	$("#introhomeFrame").append('')
+	$("#introTitle").append('')
 
 	$("#introFrame").append('<div id="bioFrame" style="position:absolute;top:100%;left:0px;right:0px;height:70%;bottom:0px;background-color:#d6d8d6"></div>')
 	$("#bioFrame").append('<div id="bioTitle" style="position:absolute;top:20%;left:20%;width:60%;color:#393F44;font-size:45px;font-family:Georgia,sans-serif;line-height:1.3;text-align:center;background-color:Transparent;">BIO</div>')
