@@ -1,37 +1,61 @@
-#barFrame { 
-    font-size: 20px;
+body { 
+  margin: 0;
+}
+
+#bar-frame { 
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
     height: 60px;
     width: 100%;
     background-color: #383f43;
-    z-index: 100;
+    z-index: 1;
 }
 
-#homeFrame {
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  right: -2px;
-  bottom: 0px;
+#home-frame {
   background-color: green;
 }
 
-#bioFrame {
+#home-frame-wave {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 42% 0px;
+}
+
+#home-frame-title {
   position: absolute;
-  top: 180%;
-  left: 0px;
-  right: 0px;
+  top: 60%;
+  width: 100%;
+  color: #000080;
+  font-size: 72px;
+  font-family: 'Comic Sans MS';
+  text-align: center;
+  font-weight: 'bold';
+}
+
+#home-frame-text {
+  position: absolute;
+  top: 115%;
+  width: 100%;
+  font-size: 32px;
+  font-family: 'Comic Sans MS';
+  text-align: center;
+}
+
+#intro-frame {
+  width: 100%;
+  height: 80%;
+  background-color: #fae8bd
+}
+
+
+
+#bio-frame {
   height: 50%;
-  bottom: 0px;
   background-color: #d6d8d6;
 }
 
 @media only screen and (max-width: 1000px) {
-  #bioFrame {
+  #bio-frame {
     position: absolute;
     top: 180%;
     left: 0px;
@@ -42,31 +66,7 @@
   }
 }
 
-
-#introFrame {
-  position: absolute;
-  width: 100%;
-  top: 100%;
-  left: 0px;
-  right: -2px;
-  height: 80%;
-  bottom: 0px;
-  background-color: #fae8bd
-}
-
-@media only screen and (max-width: 1000px) {
-  #introFrame {
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    left: 0px;
-    right: -2px;
-    height: 60%;
-    bottom: 0px;
-    background-color: #fae8bd
-  }
-}
-#introFrameImage {
+#intro-frame-image {
   margin: 0;
   position: absolute;
   left: 10%;
@@ -77,7 +77,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  #introFrameImage {
+  #intro-frame-image {
     margin: 0;
     position: absolute;
     left: -5%;
@@ -88,7 +88,7 @@
   }
 }
 
-#introTitle {
+#intro-title {
   position: absolute;
   left: 55%;
   top: 30%;
@@ -100,7 +100,7 @@
   color: #e80fe1
 }
 
-#introText {
+#intro-text {
   position: absolute; 
   top: 40%;
   left: 55%;
@@ -113,7 +113,7 @@
   line-height: 1.5;
 }
 
-#homeMenuButton {
+#home-menu-button {
     position: absolute;
     top: 30%;
     left: 13%;
@@ -127,7 +127,7 @@
     color: white;
 }
 
-#listenMenuButton {
+#listen-menu-button {
     position: absolute;
     top: 30%;
     left: 20%;
@@ -141,7 +141,7 @@
     color: white;
 }
 
-#listenButton {
+#listen-button {
   position: absolute;
   left: 50%;
   top: 80%;
@@ -155,7 +155,7 @@
   
 }
 
-#linkedin {
+#linkedin-icon {
     position: absolute;
     left: 30%;
     top: 10px;
@@ -163,7 +163,7 @@
     height: 40px; 
 }
 
-#facebook {
+#facebook-icon {
   position: absolute;
   left: 35%;
   top: 10px;
@@ -171,25 +171,12 @@
   height: 40px; 
 }
 
-#instagram {
+#instagram-icon {
   position: absolute;
   left: 40%;
   top: 10px;
   width: 40px;
   height: 40px; 
-}
-
-#wave {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  width: 100%;
-  height: 100%;
-  margin-left: auto; /* Centers image horizontally */
-  margin-right: auto; /* Centers image horizontally */
-  object-fit: cover; /* Keep aspect ratio and fill dimensions. */
 }
 
 @media only screen and (max-width: 1000px) {
@@ -206,27 +193,9 @@
   }
 }
 
-#name {
-  position: absolute;
-  top: 60%;
-  width: 100%;
-  color: #000080;
-  font-size: 72px;
-  font-family: 'Comic Sans MS';
-  text-align: center;
-  font-weight: 'bold';
-}
 
-#slogan {
-  position: absolute;
-  top: 115%;
-  width: 100%;
-  font-size: 32px;
-  font-family: 'Comic Sans MS';
-  text-align: center;
-}
 
-#bioFrame2 {
+#bio-frame2 {
   position: absolute;
   top: 230%;
   left: 0px;
@@ -237,7 +206,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  #bioFrame2 {
+  #bio-frame2 {
     position: absolute;
     top: 210%;
     left: 0px;
@@ -248,7 +217,7 @@
   }
 }
 
-#bioFrame2Image {
+#bio-frame2-image {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -259,7 +228,7 @@
   object-fit: contain;
 }
 
-#bioTitle {
+#bio-title {
   position: absolute;
   top: 10%;
   left: 20%;
@@ -271,7 +240,7 @@
   text-align: center;
 }
 
-#bioText {
+#bio-text {
   position: absolute;
   top: 30%;
   left: 10%;
