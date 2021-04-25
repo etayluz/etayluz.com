@@ -25,10 +25,23 @@
   top: 180%;
   left: 0px;
   right: 0px;
-  height: 70%;
+  height: 50%;
   bottom: 0px;
   background-color: #d6d8d6;
 }
+
+@media only screen and (max-width: 1000px) {
+  #bioFrame {
+    position: absolute;
+    top: 180%;
+    left: 0px;
+    right: 0px;
+    height: 30%;
+    bottom: 0px;
+    background-color: #d6d8d6;
+  }
+}
+
 
 #introFrame {
   position: absolute;
@@ -41,6 +54,18 @@
   background-color: #fae8bd
 }
 
+@media only screen and (max-width: 1000px) {
+  #introFrame {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0px;
+    right: -2px;
+    height: 60%;
+    bottom: 0px;
+    background-color: #fae8bd
+  }
+}
 #introFrameImage {
   margin: 0;
   position: absolute;
@@ -198,5 +223,62 @@
   width: 100%;
   font-size: 32px;
   font-family: 'Comic Sans MS';
+  text-align: center;
+}
+
+#bioFrame2 {
+  position: absolute;
+  top: 230%;
+  left: 0px;
+  right: 0px;
+  height: 60%;
+  bottom: 0px;
+  background-color: #fae8bd;
+}
+
+@media only screen and (max-width: 1000px) {
+  #bioFrame2 {
+    position: absolute;
+    top: 210%;
+    left: 0px;
+    right: 0px;
+    height: 60%;
+    bottom: 0px;
+    background-color: #fae8bd;
+  }
+}
+
+#bioFrame2Image {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 30%;
+  height: 60%;
+  object-fit: contain;
+}
+
+#bioTitle {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  color: #393F44;
+  font-size: 45px;
+  font-family: Georgia,sans-serif;
+  line-height: 1.3;
+  text-align: center;
+}
+
+#bioText {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 80%;
+  color: #393F44;
+  font-size: 31px;
+  font-family: Georgia,sans-serif;
+  line-height: 1.4;
   text-align: center;
 }
