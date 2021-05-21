@@ -24,45 +24,29 @@ body {
 }
 
 #home-menu-button {
-  /* position: relative; */
-  /* top: 30%;
-  /* left: 13%; */
-  /* line-height: 15; */
   height: 100%;
-  /* white-space: nowrap; */
-  /* margin: 30; */
-  flex: 1;
   font-size: 20px;
+  margin-left: 100px;
+  margin-right: 25px;
   background-color: transparent;
   border: none;
   color: white;
 }
 
 #listen-menu-button {
-  /* position: absolute;
-  top: 30%;
-  left: 20%; */
-  /* flex: 1; */
   font-size: 20px;
-  
+  margin-right: 25px;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  overflow: hidden;
-  outline: none;
   color: white; 
 }
 
 #bio-button {
-  /* position: absolute;
-  top: 30%;
-  left: 27%; */
   font-size: 20px;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  /* overflow: hidden; */
-  /* outline: none; */
   color: white;
 }
 
