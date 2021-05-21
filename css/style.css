@@ -4,17 +4,12 @@ body {
 
 #bar-frame { 
   position: fixed;
-  height: 200px;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
   width: 100%;
   background-color: #383f43;
   z-index: 1;
-  /* display: sflex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* flex-direction: row;
-  vertical-align: middle; */
-  /* align-items: flex-start;  */
-  /* display: table-cell;  */
 }
 
 @media (max-width: 768px) {
@@ -23,12 +18,20 @@ body {
   }
 }
 
+#menu_buttons {
+   /* position: relative; */
+  flex: 1;
+  /* background-color: red; */
+}
+
 #home-menu-button {
   height: 100%;
+  /* padding: 10% 0; */
   font-size: 20px;
   margin-left: 100px;
   margin-right: 25px;
   background-color: transparent;
+  border: 1px solid red;
   border: none;
   color: white;
 }
@@ -50,28 +53,29 @@ body {
   color: white;
 }
 
+#social_buttons {
+  flex: 1;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 #linkedin-icon {
-  position: absolute;
-  left: 35%;
-  top: 10px;
-  width: 40px;
-  height: 40px; 
+  height: 70%;
+  margin-right: 30px;
+  /* border: 1px solid red; */
 }
 
 #facebook-icon {
-  position: absolute;
-  left: 40%;
-  top: 10px;
-  width: 40px;
-  height: 40px; 
+  height: 70%;
+  margin-right: 30px;
+  /* border: 1px solid red; */
 }
 
 #instagram-icon {
-  position: absolute;
-  left: 45%;
-  top: 10px;
-  width: 40px;
-  height: 40px; 
+  height: 70%;
+  /* border: 1px solid red;  */
 }
 
 #home-frame {
