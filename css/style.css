@@ -38,15 +38,21 @@ body {
   color: white;
 }
 
-#linkedin-icon {
+#bio-button {
   position: absolute;
-  left: 30%;
-  top: 10px;
-  width: 40px;
-  height: 40px; 
+  top: 30%;
+  left: 27%;
+  font-size: 20px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: white;
 }
 
-#facebook-icon {
+#linkedin-icon {
   position: absolute;
   left: 35%;
   top: 10px;
@@ -54,9 +60,17 @@ body {
   height: 40px; 
 }
 
-#instagram-icon {
+#facebook-icon {
   position: absolute;
   left: 40%;
+  top: 10px;
+  width: 40px;
+  height: 40px; 
+}
+
+#instagram-icon {
+  position: absolute;
+  left: 45%;
   top: 10px;
   width: 40px;
   height: 40px; 
