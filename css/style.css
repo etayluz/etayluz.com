@@ -3,11 +3,63 @@ body {
 }
 
 #bar-frame { 
-    position: fixed;
-    height: 60px;
-    width: 100%;
-    background-color: #383f43;
-    z-index: 1;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: #383f43;
+  z-index: 1;
+}
+
+#home-menu-button {
+  position: absolute;
+  top: 30%;
+  left: 13%;
+  font-size: 20px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: white;
+}
+
+#listen-menu-button {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  font-size: 20px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: white;
+}
+
+#linkedin-icon {
+  position: absolute;
+  left: 30%;
+  top: 10px;
+  width: 40px;
+  height: 40px; 
+}
+
+#facebook-icon {
+  position: absolute;
+  left: 35%;
+  top: 10px;
+  width: 40px;
+  height: 40px; 
+}
+
+#instagram-icon {
+  position: absolute;
+  left: 40%;
+  top: 10px;
+  width: 40px;
+  height: 40px; 
 }
 
 #home-frame {
@@ -42,6 +94,19 @@ body {
   text-align: center;
 }
 
+#listen-button {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  margin-left: -150px;
+  height: 100px;
+  width: 300px;
+  color: white;
+  background-color: #393F44;
+  font-size: 30px;
+  border-radius: 40px; 
+}
+
 #video-frame {
   background-color: #383f43;
   width: 100%;
@@ -50,7 +115,7 @@ body {
 }
 
 #intro-frame {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 100%;
   background-color: #fae8bd;
@@ -69,9 +134,9 @@ body {
 }
 
 #intro-title {
-  position: absolute;
+  position: relative;
   left: 55%;
-  top: 30%;
+  top: 0%;
   width: 80%;
   color: #393F44;
   font-size: 50px;
@@ -81,7 +146,7 @@ body {
 }
 
 #intro-text {
-  position: absolute; 
+  position: relative;
   top: 40%;
   left: 55%;
   width: 40%;
@@ -93,86 +158,37 @@ body {
   line-height: 1.5;
 }
 
-
-
 #bio-frame {
+  /* position: absolute; */
+  top: 100%;
+  width: 100%;
   height: 50%;
   background-color: #d6d8d6;
 }
 
-@media only screen and (max-width: 1000px) {
-  #home-frame, #video-frame  {
-    height: 50%;
-  }
+#bio-title {
+  position: relative;
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  color: #393F44;
+  font-size: 45px;
+  font-family: Georgia,sans-serif;
+  line-height: 1.3;
+  text-align: center;
 }
 
-
-#home-menu-button {
-    position: absolute;
-    top: 30%;
-    left: 13%;
-    font-size: 20px;
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    color: white;
+#bio-text {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  width: 80%;
+  color: #393F44;
+  font-size: 31px;
+  font-family: Georgia,sans-serif;
+  line-height: 1.4;
+  text-align: center;
 }
-
-#listen-menu-button {
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    font-size: 20px;
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    color: white;
-}
-
-#listen-button {
-  position: absolute;
-  left: 50%;
-  top: 80%;
-  margin-left: -150px;
-  height: 100px;
-  width: 300px;
-  color: white;
-  background-color: #393F44;
-  font-size: 30px;
-  border-radius: 40px;
-  
-}
-
-#linkedin-icon {
-    position: absolute;
-    left: 30%;
-    top: 10px;
-    width: 40px;
-    height: 40px; 
-}
-
-#facebook-icon {
-  position: absolute;
-  left: 35%;
-  top: 10px;
-  width: 40px;
-  height: 40px; 
-}
-
-#instagram-icon {
-  position: absolute;
-  left: 40%;
-  top: 10px;
-  width: 40px;
-  height: 40px; 
-}
-
 
 #bio-frame2 {
   position: absolute;
@@ -195,26 +211,8 @@ body {
   object-fit: contain;
 }
 
-#bio-title {
-  position: absolute;
-  top: 10%;
-  left: 20%;
-  width: 60%;
-  color: #393F44;
-  font-size: 45px;
-  font-family: Georgia,sans-serif;
-  line-height: 1.3;
-  text-align: center;
-}
-
-#bio-text {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  width: 80%;
-  color: #393F44;
-  font-size: 31px;
-  font-family: Georgia,sans-serif;
-  line-height: 1.4;
-  text-align: center;
+@media only screen and (max-width: 1000px) {
+  #home-frame, #video-frame  {
+    height: 50%;
+  }
 }
