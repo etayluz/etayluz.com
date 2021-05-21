@@ -1,4 +1,4 @@
 # Upload index.php app.js
 curl -T index.html    -u yudaluz0@myluzfamily.com:SavtaSara1 ftp://ftp.myluzfamily.com/etayluz.com/
 curl -T css/style.css -u yudaluz0@myluzfamily.com:SavtaSara1 ftp://ftp.myluzfamily.com/etayluz.com/css/style.css
-curl -T js/app.js     -u yudaluz0@myluzfamily.com:SavtaSara1 ftp://ftp.myluzfamily.com/etayluz.com/js/app.js
+curl -T js/script.js     -u yudaluz0@myluzfamily.com:SavtaSara1 ftp://ftp.myluzfamily.com/etayluz.com/js/script.js

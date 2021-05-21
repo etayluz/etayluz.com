@@ -12,6 +12,7 @@ body {
 
 #home-frame {
   background-color: green;
+  height: 100%;
 }
 
 #home-frame-wave {
@@ -50,27 +51,13 @@ body {
 
 #intro-frame {
   width: 100%;
-  height: 80%;
+  height: 100%;
   background-color: #fae8bd
 }
-
-
 
 #bio-frame {
   height: 50%;
   background-color: #d6d8d6;
-}
-
-@media only screen and (max-width: 1000px) {
-  #bio-frame {
-    position: absolute;
-    top: 180%;
-    left: 0px;
-    right: 0px;
-    height: 30%;
-    bottom: 0px;
-    background-color: #d6d8d6;
-  }
 }
 
 #intro-frame-image {
@@ -83,17 +70,13 @@ body {
   transform: translateY(-50%); /* Centers image vertifally */
 }
 
+
 @media only screen and (max-width: 1000px) {
-  #intro-frame-image {
-    margin: 0;
-    position: absolute;
-    left: -5%;
-    top: 50%;
-    height: 70%;
-    -ms-transform: translateY(-50%); /* Centers image vertifally */
-    transform: translateY(-50%); /* Centers image vertifally */
+  #home-frame, #video-frame  {
+    height: 50%;
   }
 }
+
 
 #intro-title {
   position: absolute;
@@ -186,21 +169,6 @@ body {
   height: 40px; 
 }
 
-@media only screen and (max-width: 1000px) {
-  #wave {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    height: 100%;
-    margin-left: auto; /* Centers image horizontally */
-    margin-right: auto; /* Centers image horizontally */
-    object-fit: cover; /* Keep aspect ratio and fill dimensions. */
-  }
-}
-
-
 
 #bio-frame2 {
   position: absolute;
@@ -210,18 +178,6 @@ body {
   height: 60%;
   bottom: 0px;
   background-color: #fae8bd;
-}
-
-@media only screen and (max-width: 1000px) {
-  #bio-frame2 {
-    position: absolute;
-    top: 210%;
-    left: 0px;
-    right: 0px;
-    height: 60%;
-    bottom: 0px;
-    background-color: #fae8bd;
-  }
 }
 
 #bio-frame2-image {
