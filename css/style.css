@@ -162,8 +162,6 @@ body {
 }
 
 #bio-frame {
-  /* position: absolute; */
-  top: 100%;
   width: 100%;
   height: 50%;
   background-color: #d6d8d6;
@@ -171,47 +169,66 @@ body {
 
 #bio-title {
   position: relative;
-  top: 10%;
-  left: 20%;
-  width: 60%;
+  width: 100%;
+  top: 15px;
   color: #393F44;
   font-size: 45px;
   font-family: Georgia,sans-serif;
+  /* background-color: red; */
   line-height: 1.3;
   text-align: center;
 }
 
-#bio-text {
+#bio-text1 {
   position: relative;
-  top: 30%;
-  left: 10%;
-  width: 80%;
   color: #393F44;
   font-size: 31px;
+  /* background-color: yellow; */
   font-family: Georgia,sans-serif;
   line-height: 1.4;
+  margin-top: 40px;
+  margin-left: 150px;
+  margin-right: 150px;
   text-align: center;
 }
 
 #bio-frame2 {
-  position: absolute;
-  top: 230%;
+  position: relative;
+  display: flex;
   left: 0px;
   right: 0px;
   height: 60%;
   bottom: 0px;
   background-color: #fae8bd;
+  overflow-x: hidden;
 }
 
 #bio-frame2-image {
-  position: absolute;
+  position: relative;
   left: 0px;
-  top: 0px;
+  top: 5px;
   bottom: 0px;
-  right: 0px;
-  width: 30%;
-  height: 60%;
+  /* width: 100px; */
+  /* right: 0px; */
+  /* display: block; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  background-color: blue;
+  /* width: 50%; */
+  height: 100%;
   object-fit: contain;
+}
+
+#bio-text2 {
+  /* position: relative; */
+  top: 30%;
+  left: 10%;
+  width: 10 0%;
+  color: #393F44;
+  font-size: 31px;
+  font-family: Georgia,sans-serif;
+  line-height: 1.4;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1000px) {
