@@ -168,7 +168,7 @@ body {
 }
 
 #bio-title {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   padding-top: 50px;
   /* top: 15px; */
