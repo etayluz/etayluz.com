@@ -116,6 +116,7 @@ body {
 
 #intro-frame {
   /* position: absolute; */
+  display: flex;
   width: 100%;
   height: 100%;
   background-color: #fae8bd;
@@ -127,6 +128,7 @@ body {
   /* left: 10%; */
   /* top: 50%; */
   height: 100%;
+  /* background-color: blue; */
   /* Centers image vertifally */
   /* -ms-transform: translateY(-50%);  */
   /* Centers image vertifally */
@@ -135,21 +137,22 @@ body {
 
 #intro-title {
   position: relative;
-  left: 55%;
-  top: 0%;
-  width: 80%;
+  left: 20%;
+  top: 10%;
+  width: 30%;
   color: #393F44;
   font-size: 50px;
   font-family: 'Georgia,sans-serif';
+  /* background-color: green; */
   line-height: 1.3;
   color: #e80fe1
 }
 
 #intro-text {
   position: relative;
-  top: 40%;
-  left: 55%;
-  width: 40%;
+  top: 10%;
+  /* right: 20%; */
+  /* width: 40%; */
   color: #393F44;
   font-size: 34px;
   font-family: Georgia,sans-serif;
