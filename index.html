@@ -19,20 +19,22 @@
     <button id="home-menu-button" onclick="smoothScroll('bar-frame')">Home</button>
     <button id="listen-menu-button" onclick="smoothScroll('video-frame')">Listen</button>
     <button id="bio-button" onclick="smoothScroll('bio-frame')">Bio</button>
-    <!-- $("#intro").append('<div id="bio" style="position:absolute;top:0%;left:90px;color:white"><button type="button" onclick="smoothScroll(document.getElementById(\'bioFrame\'))" style="font-size:' + fontSize + 'px;background-color:Transparent;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none;color:white;">Bio</button></div>') -->
     <a target="_blank" href="https://www.linkedin.com/in/etay-luz"><img id="linkedin-icon" src="./images/linkedin.png"/></a>
     <a target="_blank" href="https://www.facebook.com/etay.luz/"><img id="facebook-icon" src="./images/facebook.png"/></a>
     <a target="_blank" href="https://www.instagram.com/king.slayer1/"><img id="instagram-icon" src="./images/instagram.png"/></a>
   </div>
   <div id="home-frame">
-    <img id="home-frame-wave" src="./images/wave.gif"/>
+      <img id="home-frame-wave" src="./images/wave.gif"/>
+    <div id="home-filler"></div>
     <div id="home-frame-title">ETAY LUZ
       <div id="home-frame-text">Engineer. Entrepreneur. Entertainer.</div>
+      <button id='listen-button' onclick="smoothScroll('video-frame')">Have a listen</button>
     </div>
-    <button id='listen-button' onclick="smoothScroll('video-frame')">Have a listen</button>
+    
+    
   </div>
 
-  <video id="video-frame" controls>
+  <!-- <video id="video-frame" controls>
     <source src="videos/tears-in-heaven-540p-low-quality.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -51,5 +53,5 @@
   <div id="bio-frame2">
     <img id="bio-frame2-image" src="./images/baby.png"/>
     <div id="bio-text2">Today Etay works for IBM as a software engineer implementing IBM's artifical intelligence and machine learning solutions for clients. Prior to joining IBM, Etay has worked for Motorola, Intel, Qualcomm, and a handful of startups.</div>
-  </div>
+  </div> -->
 </body>

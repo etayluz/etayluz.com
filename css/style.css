@@ -4,51 +4,65 @@ body {
 
 #bar-frame { 
   position: fixed;
-  height: 60px;
+  height: 200px;
   width: 100%;
   background-color: #383f43;
   z-index: 1;
+  /* display: sflex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* flex-direction: row;
+  vertical-align: middle; */
+  /* align-items: flex-start;  */
+  /* display: table-cell;  */
+}
+
+@media (max-width: 768px) {
+  #bar-frame  {
+    height: 200px;
+  }
 }
 
 #home-menu-button {
-  position: absolute;
-  top: 30%;
-  left: 13%;
+  /* position: relative; */
+  /* top: 30%;
+  /* left: 13%; */
+  /* line-height: 15; */
+  height: 100%;
+  /* white-space: nowrap; */
+  /* margin: 30; */
+  flex: 1;
   font-size: 20px;
-  background-color: Transparent;
-  background-repeat: no-repeat;
+  background-color: transparent;
   border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
   color: white;
 }
 
 #listen-menu-button {
-  position: absolute;
+  /* position: absolute;
   top: 30%;
-  left: 20%;
+  left: 20%; */
+  /* flex: 1; */
   font-size: 20px;
-  background-color: Transparent;
-  background-repeat: no-repeat;
+  
+  background-color: transparent;
   border: none;
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  color: white;
+  color: white; 
 }
 
 #bio-button {
-  position: absolute;
+  /* position: absolute;
   top: 30%;
-  left: 27%;
+  left: 27%; */
   font-size: 20px;
-  background-color: Transparent;
-  background-repeat: no-repeat;
+  background-color: transparent;
   border: none;
   cursor: pointer;
-  overflow: hidden;
-  outline: none;
+  /* overflow: hidden; */
+  /* outline: none; */
   color: white;
 }
 
@@ -79,40 +93,58 @@ body {
 #home-frame {
   background-color: green;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start; 
 }
 
 #home-frame-wave {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 42% 0px; /* Centers image for mobile */
 }
 
+#home-filler {
+  position: relative;
+  flex: 2;
+}
+
 #home-frame-title {
-  position: absolute;
-  top: 60%;
-  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  flex: 1;
   color: #000080;
   font-size: 72px;
   font-family: 'Comic Sans MS';
   text-align: center;
   font-weight: 'bold';
+  /* border: 1px solid red; */
+}
+
+@media (max-width: 768px) {
+  #home-frame-title  {
+    font-size: 85px;
+  }
 }
 
 #home-frame-text {
-  position: absolute;
-  top: 115%;
-  width: 100%;
   font-size: 32px;
-  font-family: 'Comic Sans MS';
-  text-align: center;
+  /* border: 1px solid red; */
+}
+
+@media (max-width: 768px) {
+  #home-frame-text  {
+    font-size: 40px;
+  }
 }
 
 #listen-button {
-  position: absolute;
-  left: 50%;
-  top: 80%;
-  margin-left: -150px;
+  position: relative;
+  /* border: 1px solid red; */
+  margin: 50 auto;
   height: 100px;
   width: 300px;
   color: white;
@@ -120,6 +152,13 @@ body {
   font-size: 30px;
   border-radius: 40px; 
 }
+
+@media (max-width: 768px) {
+  #listen-button  {
+    height: 150px;
+    width: 450px;
+    font-size: 45px;
+  }
 
 #video-frame {
   background-color: #383f43;
@@ -223,8 +262,8 @@ body {
 }
 
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
   #home-frame, #video-frame  {
     height: 50%;
   }
-}
+} */
