@@ -12,28 +12,33 @@ body {
   z-index: 1;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   #bar-frame  {
-    height: 200px;
+    height: 100px;
   }
 }
 
 #menu_buttons {
-   /* position: relative; */
-  flex: 1;
-  /* background-color: red; */
+  flex: 3;
 }
 
 #home-menu-button {
   height: 100%;
-  /* padding: 10% 0; */
   font-size: 20px;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-right: 25px;
   background-color: transparent;
   border: 1px solid red;
   border: none;
   color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  #home-menu-button  {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 35px;
+  }
 }
 
 #listen-menu-button {
@@ -45,6 +50,13 @@ body {
   color: white; 
 }
 
+@media only screen and (max-width: 1000px) {
+  #listen-menu-button  {
+    margin-right: 15px;
+    font-size: 35px;
+  }
+}
+
 #bio-button {
   font-size: 20px;
   background-color: transparent;
@@ -53,8 +65,14 @@ body {
   color: white;
 }
 
+@media only screen and (max-width: 1000px) {
+  #bio-button  {
+    font-size: 35px;
+  }
+}
+
 #social_buttons {
-  flex: 1;
+  flex: 2;
   /* background-color: blue; */
   display: flex;
   flex-direction: row;
@@ -63,13 +81,14 @@ body {
 
 #linkedin-icon {
   height: 70%;
-  margin-right: 30px;
+  margin-left: 60px;
+  margin-right: 40px;
   /* border: 1px solid red; */
 }
 
 #facebook-icon {
   height: 70%;
-  margin-right: 30px;
+  margin-right: 40px;
   /* border: 1px solid red; */
 }
 
@@ -112,7 +131,7 @@ body {
   /* border: 1px solid red; */
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   #home-frame-title  {
     font-size: 85px;
   }
@@ -123,7 +142,7 @@ body {
   /* border: 1px solid red; */
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   #home-frame-text  {
     font-size: 40px;
   }
@@ -141,12 +160,13 @@ body {
   border-radius: 40px; 
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   #listen-button  {
     height: 150px;
     width: 450px;
     font-size: 45px;
   }
+}
 
 #video-frame {
   background-color: #383f43;
@@ -248,10 +268,3 @@ body {
   line-height: 1.4;
   text-align: center;
 }
-
-
-/* @media only screen and (max-width: 1000px) {
-  #home-frame, #video-frame  {
-    height: 50%;
-  }
-} */
