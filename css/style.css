@@ -177,7 +177,8 @@ body {
 
 #video-frame {
   display: flex;
-  background-color: pink;
+  background-color: #d6d8d6;
+  /* background-color: pink; */
 }
 
 @media only screen and (max-width: 1000px) {
@@ -188,9 +189,18 @@ body {
 
 #video {
   /* flex: 1; */
+  padding: 20px;
   flex-basis: 50%; /* This is same as flex 1 I think */
-  border: 1px solid red;
-  background-color: green;
+  /* border: 1px solid red;
+  background-color: green; */
+  display: flex;
+  justify-content: center;
+}
+
+#video-frame2 {
+  display: flex;
+  background-color: #fae8bd;
+  /* background-color: pink; */
 }
 
 #intro-frame {
