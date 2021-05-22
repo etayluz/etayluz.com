@@ -123,9 +123,9 @@ body {
   position: relative;
   margin: 0 auto;
   flex: 1;
-  color: #000080;
+  color: #393F44;
   font-size: 72px;
-  font-family: 'Comic Sans MS';
+  font-family: brandon-grot-w01-light, sans-serif;
   text-align: center;
   font-weight: 'bold';
   /* border: 1px solid red; */
