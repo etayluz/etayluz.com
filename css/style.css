@@ -124,9 +124,12 @@ body {
 }
 
 #profile-container {
+  /* width: 100%;
+  object-fit: cover;
+  height: 300px; */
   display: flex;
   justify-content: center;
-  height: 70%;
+  /* height: 70%;
   /* background-color: aqua; */
 }
 
